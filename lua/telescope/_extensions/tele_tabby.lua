@@ -226,7 +226,7 @@ local function list(opts)
     end
 
   pickers.new(opts, {
-    prompt_title = 'Tabs',
+    prompt_title = 'Tabpages',
     finder    = finders.new_table {
       results = windows,
       entry_maker = opts.entry_maker or make_entry(opts)
