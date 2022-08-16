@@ -219,7 +219,9 @@ local function list(opts)
                 windowid = windowid,
                 info = info
             }
+          if #element.path_start > 0 and #element.path_end > 0 then
             table.insert(windows, element)
+          end
         end
     end
 
