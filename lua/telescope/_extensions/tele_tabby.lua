@@ -88,8 +88,8 @@ local function make_entry(opts)
           { width = 2 },
           { width = 5 },
           { width = (icon_width + 3) },
-          { width = string.len( entry.path_start ) },
-          { width = 1 },
+          -- { width = string.len( entry.path_start ) },
+          -- { width = 1 },
           { remaining = true },
         },
       }
@@ -106,8 +106,8 @@ local function make_entry(opts)
       { entry.tabidx, "TelescopeResultsNumber"},
       { entry.indicator, "TelescopeResultsComment"},
       { icon, hl_group },
-      { entry.path_start },
-      { '/', "TelescopeResultsNumber" },
+      -- { entry.path_start },
+      -- { '/', "TelescopeResultsNumber" },
       { entry.path_end, path_end_highlight },
       }
   end
