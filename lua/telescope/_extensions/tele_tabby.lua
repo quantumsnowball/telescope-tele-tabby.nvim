@@ -231,6 +231,7 @@ local function list(opts)
       results = windows,
       entry_maker = opts.entry_maker or make_entry(opts)
     },
+    previewer = require("telescope.config").values.grep_previewer(opts),
     sorter = sorters.get_fzy_sorter(opts),
       attach_mappings = function(_, map)
         -- use our custom action to go the window id
